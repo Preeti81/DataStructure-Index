@@ -1,0 +1,38 @@
+pick vowel from starting of the string
+then pick vowel from last of the string
+then shift the vowel
+
+
+//logic for reverse the vowel
+  int i=0;
+	string str = "practice";//Console.ReadLine();
+	int j= str.Length-1;
+	char[] str1 = str.ToCharArray();
+	while(i<j){
+	    if(!isVowel(str1[i]))
+	    {
+	        i++;
+	        continue;
+	    }
+	    if(!isVowel(str1[j]))
+	    {
+	        j--;
+	        continue;
+	    }
+	    char ch = str1[i];
+	    str1[i] = str1[j];
+	    str1[j] = ch;
+	    
+	    i++;
+	    j--;
+	    string str2 = string.Join("", str1);
+	    Console.WriteLine(str2);
+	}
+	
+	
+	//isVowel function definition
+	static Boolean isVowel(char c)
+	{
+	    return (c== 'a' || c=='A' || c=='e' || c=='E' || c =='i'  || c=='I' || c == 'o' || c == 'O' || c == 'u' || c == 'U');
+	    
+	}

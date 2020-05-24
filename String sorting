@@ -1,0 +1,6 @@
+String Sorting using inbuild function
+
+           string str = "bbbbffffaaapppp";
+            char[] chArray = str.ToCharArray();
+            Array.Sort(chArray);
+            Console.WriteLine(chArray);

@@ -1,0 +1,22 @@
+Give some integer numeber in array then using bubble sort it will sort the element of the array.
+
+
+          int[] arr = { 4,1,7,8,2,56,23,47,2};
+            
+            for(int i=0; i<= arr.Length-1; i++)
+            {
+                for (int j = 0; j < arr.Length - i - 1; j++)
+                {
+                    if (arr[j] > arr[j + 1])
+                    {
+                        int t = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = t;
+                    }                   
+                }                
+            }
+
+            for(int i=0;i<arr.Length;i++)
+            {
+                Console.Write(arr[i] + " ");
+            }
